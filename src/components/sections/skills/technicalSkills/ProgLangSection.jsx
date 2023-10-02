@@ -5,7 +5,7 @@ import Card from "../../../framerMotion/Card";
 function ProgLangSection() {
   return (
     <>
-      <h4 className="text-lg capitalize mb-2 cursor-default">Programming Languages</h4>
+      <h4 className="text-lg capitalize mb-2 cursor-default">Languages</h4>
       <SectionBody
         customClass={"none"}
         customSectionClass={
