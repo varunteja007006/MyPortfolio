@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* only aesthetics */
+  .sidebar-btn-lg {
+    @apply bg-slate-100 bg-opacity-50 border border-black hover:border hover:border-black dark:border-slate-300  dark:bg-opacity-80 dark:text-black;
+  }
+
+  .sidebar-btn-sm {
+    @apply bg-slate-100 bg-opacity-50 border-black hover:border hover:bg-gray-200 hover:border-black dark:border-slate-300 dark:text-black dark:bg-opacity-80;
+  }
+
+  .accent-btn {
+    @apply border-2 shadow-md text-black border-gray-600 bg-slate-100 dark:text-black dark:bg-slate-300 hover:border-2 hover:border-gray-500 hover:bg-sky-200 hover:shadow-lg hover:dark:bg-gray-400;
+  }
+
+  .certificate-accent-card {
+    @apply cursor-default font-semibold bg-slate-100 rounded-lg shadow-md hover:shadow-lg dark:bg-slate-300 dark:text-black;
+  }
+
+  .aboutme-accent-card {
+    @apply shadow-lg rounded-none bg-slate-100 dark:bg-slate-300 dark:text-black border-b-2 border-r-2 border-slate-200;
+  }
+
+  .skills-accent-card {
+    @apply cursor-default bg-slate-100 rounded-lg font-semibold shadow-md hover:shadow-lg dark:bg-slate-300 dark:text-black;
+  }
+
+  .projects-accent-card {
+    @apply shadow-lg rounded-none bg-slate-100 dark:bg-slate-300 dark:text-black border-b-2 border-r-2 border-slate-200;
+  }
+
+  .projects-accent-badge {
+    @apply cursor-default bg-sky-800 text-white shadow-md border-2 border-gray-600;
+  }
+
+  .section-border {
+    @apply border-t border-sky-900 dark:border-gray-200;
+  }
+
+  /* Aesthetics & other properties */
+  .contact-btn-lg {
+    @apply p-4 bg-slate-100 text-black rounded-full border border-gray-400 shadow-md hover:bg-slate-200 dark:border-white dark:bg-slate-300 dark:hover:bg-gray-400;
+  }
+
+  .contact-btn-sm {
+    @apply btn my-3 accent-btn rounded-full;
+  }
+
+  .contact-container-lg {
+    @apply lg:flex flex-wrap gap-3 my-5 items-center px-3 w-fit pr-0 rounded-full border border-r-0 border-gray-400 dark:border-white;
+  }
+
+  .contact-container-sm {
+    @apply p-3 flex-wrap gap-3 py-5 break-words border border-gray-400 dark:border-white;
+  }
+
+  .footer-content{
+    @apply flex flex-wrap justify-center gap-5 items-center
+  }
+}
