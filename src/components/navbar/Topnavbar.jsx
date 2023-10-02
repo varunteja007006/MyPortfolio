@@ -4,8 +4,8 @@ import ResumeButton from "../customButtons/ResumeButton";
 
 function Topnavbar() {
   return (
-    <nav className="dark:bg-slate-900 dark:text-white">
-      <div className="navbar font-semibold ">
+    <nav className="dark:text-white">
+      <div className="navbar font-semibold fixed z-50 bg-sky-100 bg-opacity-50 dark:bg-slate-900 dark:bg-opacity-50">
         <div className="navbar-start">
           {/* dropdown button and menu options */}
           <div className="dropdown">

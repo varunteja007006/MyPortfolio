@@ -5,7 +5,7 @@ import FooterContent from "../components/footer/FooterContent";
 function Contactme() {
   return (
     <>
-      <div className="p-10">
+      <div className="p-10 pt-20">
         <h1 className="text-4xl mb-5">Contact Me</h1>
         {contacts.map((item) => {
           return (

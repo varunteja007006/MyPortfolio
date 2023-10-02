@@ -9,7 +9,8 @@ function ThemeButton() {
   const setlocal = () => {
     localStorage.setItem("theme", theme === "light" ? "dark" : "light");
     toast.success(
-      `Theme is set to ${theme !== "light" ? "light" : "dark"} mode`
+      `Theme is set to ${theme !== "light" ? "light" : "dark"} mode`,
+      { theme: theme !== "light" ? "light" : "dark" }
     );
   };
 

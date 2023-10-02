@@ -11,7 +11,7 @@ export const ThemeContextProvider = ({ children }) => {
     //check if we got theme from local storage, if yes then set the theme
     if (theme) {
       setTheme(theme);
-      toast.success(`Theme is set to ${theme} mode`);
+      toast.success(`Theme is set to ${theme} mode`, { theme });
     }
   }, []);
 

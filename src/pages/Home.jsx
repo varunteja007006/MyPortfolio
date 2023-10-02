@@ -9,7 +9,7 @@ import {
 import { sectionData } from "../data/sectionData";
 function Home() {
   return (
-    <div>
+    <div className="pt-10">
       <section id={sectionData[1]}>
         <Intro></Intro>
       </section>
