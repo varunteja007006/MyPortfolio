@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { memo } from "react";
 import { Link } from "react-router-dom";
-
+import { SiGithub } from "react-icons/si";
 function ProjectCard({ data }) {
   const { title, subtitle, badges, description, github, link, images } = data;
   const itemEffect = {
@@ -20,7 +20,7 @@ function ProjectCard({ data }) {
       className="card card-side p-5 projects-accent-card mb-1 grid grid-cols-1 lg:grid-cols-2 items-center"
       variants={itemEffect}
     >
-      <figure className="flex flex-col h-72 overflow-y-auto overflow-x-auto">
+      <figure className="flex flex-col w-full h-80 hover:overflow-y-auto border-2 dark:border dark:border-slate-900">
         {images &&
           images.map((item, index) => {
             return <img key={index} src={item} alt={title} />;
@@ -28,8 +28,12 @@ function ProjectCard({ data }) {
       </figure>
 
       <div className="card-body block text-center">
-        <h3 className="text-2xl font-semibold cursor-default">{title ? title : "......"}</h3>
-        <p className="text-sm text-gray-700 cursor-default">{subtitle ? subtitle : "....."}</p>
+        <h3 className="text-2xl font-semibold cursor-default">
+          {title ? title : "......"}
+        </h3>
+        <p className="text-sm text-gray-700 cursor-default">
+          {subtitle ? subtitle : "....."}
+        </p>
         <div className="mb-3">
           {badges &&
             badges.map((item, index) => {
@@ -48,14 +52,20 @@ function ProjectCard({ data }) {
         </p>
         <div className="card-actions my-2">
           {github && (
-            <Link to={github} className="btn accent-btn">
-              Git
-            </Link>
+            <span className=" tooltip" data-tip="Github link">
+              <Link to={github} className="btn accent-btn items-center">
+                <span className="text-xl">
+                  <SiGithub />
+                </span>{" "}
+              </Link>
+            </span>
           )}
           {link && (
-            <Link to={link} className="btn accent-btn">
-              Demo
-            </Link>
+            <span className=" tooltip" data-tip="Launch demo">
+              <Link to={link} className="btn accent-btn">
+                Demo
+              </Link>
+            </span>
           )}
         </div>
       </div>
