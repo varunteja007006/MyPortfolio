@@ -20,7 +20,7 @@ function ProjectCard({ data }) {
       className="card card-side p-5 projects-accent-card mb-1 grid grid-cols-1 lg:grid-cols-2 items-center"
       variants={itemEffect}
     >
-      <div className="h-96 carousel carousel-vertical rounded-none border-2 dark:border dark:border-slate-900">
+      <div className="h-96 carousel carousel-vertical rounded-none border-2 dark:border dark:border-slate-900 cursor-pointer">
         {images &&
           images.map((item, index) => {
             return (
