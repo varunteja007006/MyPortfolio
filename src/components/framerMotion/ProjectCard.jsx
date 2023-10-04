@@ -20,13 +20,18 @@ function ProjectCard({ data }) {
       className="card card-side p-5 projects-accent-card mb-1 grid grid-cols-1 lg:grid-cols-2 items-center"
       variants={itemEffect}
     >
-      <figure className="flex flex-col w-full h-80 hover:overflow-y-auto border-2 dark:border dark:border-slate-900">
-        {images &&
-          images.map((item, index) => {
-            return <img key={index} src={item} alt={title} />;
-          })}
-      </figure>
-
+      <span className="p- overflow-y-auto">
+        <div className="h-96 carousel carousel-vertical rounded-none border-2 dark:border dark:border-slate-900">
+          {images &&
+            images.map((item, index) => {
+              return (
+                <div key={index} className="carousel-item h-fit">
+                  <img src={item} alt={title} className="w-full " />
+                </div>
+              );
+            })}
+        </div>
+      </span>
       <div className="card-body block text-center">
         <h3 className="text-2xl font-semibold cursor-default">
           {title ? title : "......"}
