@@ -5,7 +5,6 @@ import Contactme from "./pages/Contactme";
 import Topnavbar from "./components/navbar/Topnavbar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Sidenavbar from "./components/navbar/Sidenavbar";
 
 function App() {
   const { theme } = useThemeContext();
@@ -14,7 +13,6 @@ function App() {
       <BrowserRouter>
         <main className={`${theme} bg-sky-100`}>
           <Topnavbar></Topnavbar>
-          <Sidenavbar></Sidenavbar>
           <div className="dark:bg-slate-900 dark:text-white">
             <Routes>
               <Route index path="/" element={<Home />}></Route>

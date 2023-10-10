@@ -1,4 +1,5 @@
 import Footer from "../components/footer/Footer";
+import Sidenavbar from "../components/navbar/Sidenavbar";
 import {
   Aboutme,
   Certifications,
@@ -7,9 +8,11 @@ import {
   Skills,
 } from "../components/sections";
 import { sectionData } from "../data/sectionData";
+
 function Home() {
   return (
     <div className="pt-14 md:pt-10">
+      <Sidenavbar></Sidenavbar>
       <section id={sectionData[1]}>
         <Intro></Intro>
       </section>

@@ -53,7 +53,7 @@ const projectData = [
     project_description: [
       "This application is built on the MERN Stack Framework, with JWT-based authentication for enhanced security. React useReducer hook is used for efficient state updates, while the useContext hook provides seamless user experience. These features work together to create a professional and high-quality application, delivering exceptional performance and functionality.",
     ],
-    project_github: "https://github.com/varunteja007006/MERNstackdeploy",
+    project_github: "https://github.com/varunteja007006/FitApp-ReactJS",
     project_link: "",
     project_images: [fit, fit1, fit2],
     show: true,

@@ -9,7 +9,7 @@ body * {
 @layer components {
   /* only aesthetics */
   .sidebar-btn-lg {
-    @apply bg-slate-100 bg-opacity-50 border border-black hover:border hover:border-black dark:border-slate-300  dark:bg-opacity-80 dark:text-black;
+    @apply bg-slate-100 bg-opacity-50 border border-black hover:border hover:border-black dark:border-slate-300  dark:bg-opacity-90 dark:text-black;
   }
 
   .sidebar-btn-sm {
