@@ -12,7 +12,7 @@ function Intro() {
           {/* profile pic */}
           <span className="flex flex-col gap-5 text-white text-center">
             <img src={profile} className="max-w-sm rounded-lg shadow-2xl" />
-            <span className="text-xl">
+            <span className="text-xl text-black dark:text-white">
               <Typewriter
                 options={{
                   strings: ["Full Stack Developer", "Python Developer"],
