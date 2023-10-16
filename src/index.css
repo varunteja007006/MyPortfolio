@@ -9,7 +9,7 @@ body * {
 @layer components {
   /* only aesthetics */
   .sidebar-btn-lg {
-    @apply bg-slate-100 bg-opacity-50 border border-black hover:border hover:border-black dark:border-slate-300  dark:bg-opacity-90 dark:text-black;
+    @apply bg-slate-100 bg-opacity-50 border text-black border-black hover:bg-slate-200 hover:bg-opacity-90 hover:dark:bg-slate-100 hover:border hover:border-black dark:border-slate-300  dark:bg-opacity-90 dark:text-black;
   }
 
   .sidebar-btn-sm {
@@ -17,7 +17,7 @@ body * {
   }
 
   .accent-btn {
-    @apply border-2 shadow-md text-black border-gray-600 bg-slate-100 dark:text-black dark:bg-slate-300 hover:border-2 hover:border-gray-500 hover:bg-sky-200 hover:shadow-lg hover:dark:bg-gray-400;
+    @apply border-2 shadow-md text-black border-gray-600 bg-slate-100 dark:text-black dark:bg-slate-300 hover:border-2 hover:border-gray-500 hover:bg-sky-200 hover:text-black hover:shadow-lg hover:dark:bg-gray-400;
   }
 
   .certificate-accent-card {

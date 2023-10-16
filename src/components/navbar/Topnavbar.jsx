@@ -54,7 +54,7 @@ function Topnavbar() {
             <li>
               <NavLink
                 to={"/"}
-                className={"dark:bg-white dark:text-black accent-btn"}
+                className={"accent-btn"}
               >
                 Home
               </NavLink>
@@ -62,7 +62,7 @@ function Topnavbar() {
             <li>
               <NavLink
                 to={"/contact"}
-                className={"dark:bg-white dark:text-black accent-btn"}
+                className={"accent-btn"}
               >
                 Contact Me
               </NavLink>
