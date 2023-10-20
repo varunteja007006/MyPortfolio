@@ -27,7 +27,7 @@ function Topnavbar() {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 dark:bg-gray-300 dark:text-black"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-slate-100 rounded-box w-52 dark:bg-gray-300 dark:text-black font-bold"
             >
               <li>
                 <NavLink to={"/"} className={""}>
@@ -52,18 +52,12 @@ function Topnavbar() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-3">
             <li>
-              <NavLink
-                to={"/"}
-                className={"accent-btn"}
-              >
+              <NavLink to={"/"} className={"accent-btn"}>
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to={"/contact"}
-                className={"accent-btn"}
-              >
+              <NavLink to={"/contact"} className={"accent-btn"}>
                 Contact Me
               </NavLink>
             </li>
