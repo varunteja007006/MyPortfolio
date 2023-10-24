@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { BsDownload } from "react-icons/bs";
-import resume from "../../assets/varun_resume.pdf";
+import resume from "../../assets/VarunK_Resume_FS.pdf";
 
 function ResumeButton() {
   return (
