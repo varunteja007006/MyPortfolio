@@ -39,6 +39,7 @@ function Footer() {
               variants={itemEffect}
               href={item.contact_href}
               data-tip={item.contact_type}
+              aria-label={item.contact_href}
             >
               {<item.contact_icon />}
             </motion.a>

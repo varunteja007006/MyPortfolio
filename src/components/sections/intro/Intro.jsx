@@ -14,6 +14,7 @@ function Intro() {
             <img
               src={profile}
               className="rounded-lg shadow-2xl  w-full h-full"
+              alt="profile image"
             />
             <span className="text-xl text-black dark:text-white mt-5 w-full h-10">
               <Typewriter

@@ -19,6 +19,7 @@ function Contactme() {
                 <Link
                   to={item.contact_href}
                   className={`contact-btn-lg ${item.icon_style}`}
+                  aria-label={item.contact_href}
                 >
                   {<item.contact_icon />}
                 </Link>
@@ -32,6 +33,7 @@ function Contactme() {
                 <Link
                   to={item.contact_href}
                   className={`contact-btn-sm ${item.icon_style}`}
+                  aria-label={item.contact_href}
                 >
                   {<item.contact_icon />}
                 </Link>

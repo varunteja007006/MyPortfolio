@@ -56,7 +56,11 @@ function ProjectCard({ data }) {
         <div className="card-actions my-2">
           {github && (
             <span className=" tooltip" data-tip="Github link">
-              <Link to={github} className="btn accent-btn items-center">
+              <Link
+                to={github}
+                className="btn accent-btn items-center"
+                aria-label={`github link to ${title}`}
+              >
                 <span className="text-xl">
                   <SiGithub />
                 </span>{" "}
@@ -65,7 +69,11 @@ function ProjectCard({ data }) {
           )}
           {link && (
             <span className=" tooltip" data-tip="Launch demo">
-              <Link to={link} className="btn accent-btn">
+              <Link
+                to={link}
+                className="btn accent-btn"
+                aria-label={`demo link to ${title}`}
+              >
                 Demo
               </Link>
             </span>
