@@ -34,26 +34,31 @@ function Sidenavbar() {
 
   return (
     <>
+      {/* side nav on big screen */}
       <div className="hidden lg:flex flex-col gap-20 fixed bottom-1/3 right-2 z-10">
         <CustomLinkButton
           label={<SlArrowUp></SlArrowUp>}
           customClass={"btn sidebar-btn-lg"}
           handleClick={increment}
           url={`#${sectionData[sectionID === 0 ? 5 : sectionID]}`}
+          aria-label="scroll through sections"
         ></CustomLinkButton>
         <CustomLinkButton
           label={<SlArrowDown></SlArrowDown>}
           customClass={"btn sidebar-btn-lg"}
           handleClick={decrement}
           url={`#${sectionData[sectionID === 6 ? 1 : sectionID]}`}
+          aria-label="scroll through sections"
         ></CustomLinkButton>
       </div>
+      {/* side nav on small screen */}
       <div className="lg:hidden fixed bottom-32 right-2 z-10  ">
         <CustomLinkButton
           label={<SlArrowDown></SlArrowDown>}
           customClass={"btn sidebar-btn-sm"}
           handleClick={next}
           url={`#${sectionData[sectionID]}`}
+          aria-label="scroll through sections"
         ></CustomLinkButton>
       </div>
     </>

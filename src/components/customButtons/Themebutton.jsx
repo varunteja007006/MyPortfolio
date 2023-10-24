@@ -24,6 +24,7 @@ function ThemeButton() {
         }}
         className="btn text-lg accent-btn tooltip tooltip-left"
         data-tip="Change theme"
+        aria-label="theme button"
         // whileFocus={{ scale: 1.08 }}
       >
         {/* theme */}
