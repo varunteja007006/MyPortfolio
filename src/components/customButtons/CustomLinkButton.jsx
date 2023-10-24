@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { memo } from "react";
 
-function CustomLinkButton({ customClass, label, url, handleClick }) {
+function CustomLinkButton({ customClass, label, url, handleClick, ariaLabel }) {
   return (
     <>
       <motion.a
@@ -12,6 +12,7 @@ function CustomLinkButton({ customClass, label, url, handleClick }) {
         className={`btn ${customClass}`}
         href={url}
         onClick={handleClick}
+        aria-label={ariaLabel ? ariaLabel : "btn"}
       >
         {label}
       </motion.a>

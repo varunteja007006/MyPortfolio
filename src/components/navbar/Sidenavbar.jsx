@@ -41,14 +41,14 @@ function Sidenavbar() {
           customClass={"btn sidebar-btn-lg"}
           handleClick={increment}
           url={`#${sectionData[sectionID === 0 ? 5 : sectionID]}`}
-          aria-label="scroll through sections"
+          ariaLabel="scroll through sections"
         ></CustomLinkButton>
         <CustomLinkButton
           label={<SlArrowDown></SlArrowDown>}
           customClass={"btn sidebar-btn-lg"}
           handleClick={decrement}
           url={`#${sectionData[sectionID === 6 ? 1 : sectionID]}`}
-          aria-label="scroll through sections"
+          ariaLabel="scroll through sections"
         ></CustomLinkButton>
       </div>
       {/* side nav on small screen */}
@@ -58,7 +58,7 @@ function Sidenavbar() {
           customClass={"btn sidebar-btn-sm"}
           handleClick={next}
           url={`#${sectionData[sectionID]}`}
-          aria-label="scroll through sections"
+          ariaLabel="scroll through sections"
         ></CustomLinkButton>
       </div>
     </>

@@ -42,7 +42,11 @@ function Topnavbar() {
             </ul>
           </div>
           {/* Nav bar brand name */}
-          <a className="normal-case font-semibold ms-2 text-sm cursor-default flex flex-row gap-3  items-center">
+          <a
+            href="/"
+            aria-label="Developer"
+            className="normal-case font-semibold ms-2 text-sm cursor-default flex flex-row gap-3  items-center"
+          >
             <span className="hidden lg:flex text-sm">{"< "}</span>
             <span className="text-2xl">Developer</span>
             <span className="hidden lg:flex text-sm">{" />"}</span>
