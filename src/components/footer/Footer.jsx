@@ -35,7 +35,8 @@ function Footer() {
             <motion.a
               key={item.id}
               whileHover={{ scale: 1.02 }}
-              className={`${item.icon_style} contact-btn-lg tooltip`}
+              className={`${item.icon_style} contact-btn-lg tooltip motion-safe:animate-wiggle
+              }`}
               variants={itemEffect}
               href={item.contact_href}
               data-tip={item.contact_type}

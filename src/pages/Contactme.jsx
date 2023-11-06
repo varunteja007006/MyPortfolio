@@ -18,7 +18,7 @@ function Contactme() {
                 <p>{item.contact_value}</p>
                 <Link
                   to={item.contact_href}
-                  className={`contact-btn-lg ${item.icon_style}`}
+                  className={`contact-btn-lg ${item.icon_style} motion-safe:animate-wiggle`}
                   aria-label={item.contact_href}
                 >
                   {<item.contact_icon />}

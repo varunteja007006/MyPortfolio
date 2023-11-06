@@ -41,10 +41,10 @@ const contactData = [
   {
     id: 4,
     contact_type: "github",
-    contact_href: "https://github.com/varunteja007006?tab=repositories",
+    contact_href: "https://github.com/varunteja007006",
     contact_icon: SiGithub,
     icon_style: "text-2xl",
-    contact_value: "https://github.com/varunteja007006?tab=repositories",
+    contact_value: "https://github.com/varunteja007006",
   },
 ];
 
