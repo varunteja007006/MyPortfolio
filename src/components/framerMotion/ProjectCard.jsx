@@ -25,7 +25,7 @@ function ProjectCard({ data }) {
           images.map((item, index) => {
             return (
               <div key={index} className="carousel-item h-fit">
-                <img src={item} alt={title} className="w-full min-h-full" />
+                  <img src={item} alt={title} className="w-full min-h-full" />
               </div>
             );
           })}
