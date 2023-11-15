@@ -55,7 +55,7 @@ function Intro() {
               automation of day-to-day tasks. I am always eager to explore new
               technologies and I keep myself relevant. <br />
               <br />
-              Currently, I work as System Engineer for HXM platform development,
+              Currently, I work as System Engineer for HCM platform development,
               developing react based custom responsive interfaces tailored to
               meet client requirements. I have successfully developed dynamic
               dashboards and data panels. I am keen to expand my domain in other

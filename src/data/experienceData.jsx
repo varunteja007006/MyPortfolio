@@ -9,11 +9,11 @@ const experienceData = [
     jobDescription: [
       "Profession: System Engineer - SuccessFactors HXM Platform Development.",
       "Responsibilities: Developing and supporting custom interfaces, specifically tailored to meet client requirements for a global user base of 10,000+ across four critical regions: America, APAC, EMEA, and JAPAN.",
-      "Additional tasks: Handling SF configuration, updates, and conducting both automated and manual testing.",
+      "Additional Info: Built custom interfaces using Recharts, React Hooks, Fetch API, supporting  JWT Authentication.",
       "Success milestone: Received a 5-star rating from customers for consistently providing timely updates and exceptional support.",
     ],
     show: true,
-    hidden:false,
+    hidden: false,
   },
 ];
 export default experienceData;
