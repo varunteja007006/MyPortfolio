@@ -9,7 +9,7 @@ function ToolsCard() {
       <SectionBody
         customClass={"none"}
         customSectionClass={
-          "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3 justify-items-stretch"
+          "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 justify-items-stretch"
         }
       >
         {technicalSkills.tools.map((item, index) => {

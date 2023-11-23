@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import profile from "../../../assets/profile.webp";
-import resume from "../../../assets/VarunK_Resume_FS.pdf";
+import resume from "../../../assets/Resume_VarunK.pdf";
 import { BsDownload } from "react-icons/bs";
 import Typewriter from "typewriter-effect";
 

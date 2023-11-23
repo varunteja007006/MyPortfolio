@@ -5,18 +5,16 @@ import { memo } from "react";
 
 function CustomLinkButton({ customClass, label, url, handleClick, ariaLabel }) {
   return (
-    <>
-      <motion.a
-        whileTap={{ scale: 0.7 }}
-        whileFocus={{ scale: 1.1 }}
-        className={`btn ${customClass}`}
-        href={url}
-        onClick={handleClick}
-        aria-label={ariaLabel ? ariaLabel : "btn"}
-      >
-        {label}
-      </motion.a>
-    </>
+    <motion.a
+      whileTap={{ scale: 0.7 }}
+      whileFocus={{ scale: 1.1 }}
+      className={`btn ${customClass}`}
+      href={url}
+      onClick={handleClick}
+      aria-label={ariaLabel ? ariaLabel : "btn"}
+    >
+      {label}
+    </motion.a>
   );
 }
 

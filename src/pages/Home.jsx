@@ -1,13 +1,13 @@
-import Footer from "../components/footer/Footer";
+import { Suspense, lazy } from "react";
 import Sidenavbar from "../components/navbar/Sidenavbar";
-import {
-  Aboutme,
-  Certifications,
-  Intro,
-  Projects,
-  Skills,
-} from "../components/sections";
+import { Certifications, Intro } from "../components/sections";
 import { sectionData } from "../data/sectionData";
+import CustomLoading from "../components/custom/CustomLoading";
+
+const Footer = lazy(() => import("../components/footer/Footer"));
+const Projects = lazy(() => import("../components/sections/projects/Projects"));
+const Skills = lazy(() => import("../components/sections/skills/Skills"));
+const Aboutme = lazy(() => import("../components/sections/aboutme/Aboutme"));
 
 function Home() {
   return (
@@ -17,18 +17,26 @@ function Home() {
         <Intro></Intro>
       </section>
       <section id={sectionData[2]}>
-        <Skills></Skills>
+        <Suspense fallback={<CustomLoading></CustomLoading>}>
+          <Skills></Skills>
+        </Suspense>
       </section>
       <section id={sectionData[3]}>
-        <Aboutme></Aboutme>
+        <Suspense fallback={<CustomLoading></CustomLoading>}>
+          <Aboutme></Aboutme>
+        </Suspense>
       </section>
       <section id={sectionData[4]}>
-        <Projects></Projects>
+        <Suspense fallback={<CustomLoading></CustomLoading>}>
+          <Projects></Projects>
+        </Suspense>
       </section>
       <section id={sectionData[5]}>
         <Certifications></Certifications>
       </section>
-      <Footer></Footer>
+      <Suspense fallback={<CustomLoading></CustomLoading>}>
+        <Footer></Footer>
+      </Suspense>
     </div>
   );
 }

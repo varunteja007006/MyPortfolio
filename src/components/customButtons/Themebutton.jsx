@@ -15,22 +15,20 @@ function ThemeButton() {
   };
 
   return (
-    <>
-      <motion.button
-        whileTap={{ scale: 0.8 }}
-        onClick={() => {
-          setTheme(theme === "light" ? "dark" : "light");
-          setlocal();
-        }}
-        className="btn text-lg accent-btn tooltip tooltip-left"
-        data-tip="Change theme"
-        aria-label="theme button"
-        // whileFocus={{ scale: 1.08 }}
-      >
-        {/* theme */}
-        {theme !== "light" ? <BsFillSunFill /> : <BsMoonFill />}
-      </motion.button>
-    </>
+    <motion.button
+      whileTap={{ scale: 0.8 }}
+      onClick={() => {
+        setTheme(theme === "light" ? "dark" : "light");
+        setlocal();
+      }}
+      className="btn text-lg accent-btn tooltip tooltip-left"
+      data-tip="Change theme"
+      aria-label="theme button"
+      // whileFocus={{ scale: 1.08 }}
+    >
+      {/* theme */}
+      {theme !== "light" ? <BsFillSunFill /> : <BsMoonFill />}
+    </motion.button>
   );
 }
 
