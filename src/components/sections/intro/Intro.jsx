@@ -6,16 +6,16 @@ import Typewriter from "typewriter-effect";
 
 function Intro() {
   return (
-    <div className="hero min-h-screen pt-5 p-10 ">
-      <div className="hero-content flex-col lg:flex-row lg:items-start p-0">
+    <div className="hero min-h-fit lg:min-h-screen md:pt-5 md:mt-10 md:p-10 lg:mt-5 p-7">
+      <div className="hero-content flex-col md:flex-row md:items-start p-0">
         {/* profile pic */}
-        <div className="flex flex-col  text-white text-center items-center lg:w-1/3">
+        <div className="flex flex-col  text-white text-center items-center md:w-1/3">
           <img
             src={profile}
-            className="rounded-lg shadow-2xl  w-full h-full"
+            className="rounded-lg shadow-2xl w-80 h-80  lg:w-96 lg:h-96"
             alt="profile image"
           />
-          <span className="text-xl text-black dark:text-white mt-5 w-full h-10">
+          <span className="text-xl text-black dark:text-white mt-5 w-full h-fit">
             <Typewriter
               options={{
                 strings: [
@@ -28,7 +28,7 @@ function Intro() {
             />
           </span>
         </div>
-        <div className="lg:w-2/3">
+        <div className="md:w-2/3">
           {/* intro content */}
           <div className="md:px-10 lg:px-14 text-justify font-normal grid justify-items-stretch cursor-default">
             <p className="pb-3 font-medium">
