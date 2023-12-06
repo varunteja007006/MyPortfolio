@@ -27,7 +27,7 @@ const projectData = [
   {
     id: 1,
     project_title: `JobToday`,
-    project_subtitle: `An awesome ToDo App`,
+    project_subtitle: `An awesome Job manager`,
     project_badges: ["Axios", "React JS", "Redux", "Recharts", "Tailwind CSS"],
     project_description: [
       "Applying Jobs can be tiring. You want to know what is more tiring? Keeping track of those jobs. JobToday ⚡ - The Pro Job Application Manager App will help you keep track of your job applications.",
@@ -41,7 +41,7 @@ const projectData = [
   {
     id: 2,
     project_title: `Fit App`,
-    project_subtitle:``,
+    project_subtitle: ``,
     project_badges: [
       "Mongo DB",
       "Express JS",
@@ -62,7 +62,7 @@ const projectData = [
   {
     id: 3,
     project_title: `Twitter Sentiment Analysis`,
-    project_subtitle:``,
+    project_subtitle: ``,
     project_badges: [
       "Django",
       "Python",
@@ -88,7 +88,7 @@ const projectData = [
   {
     id: 4,
     project_title: `Sports Management Website`,
-    project_subtitle:``,
+    project_subtitle: ``,
     project_badges: ["PHP", "HTML", "CSS", "JavaScript", "MySQL"],
     project_description: [
       "This project is designed to keep track of sports events and is based on the LAMP stack. The website is built from scratch, making use of PHP and MySQL to power the backend, and plain HTML and CSS for the frontend. Additionally, Bootstrap was later implemented to enhance the design consistency. Despite being my first project, the website is effective in its goal of maintaining records and delivering an efficient user experience.",
@@ -114,7 +114,7 @@ const projectData = [
   {
     id: 5,
     project_title: `Collabs`,
-    project_subtitle:``,
+    project_subtitle: ``,
     project_badges: [
       "Django",
       "Python",
@@ -135,7 +135,7 @@ const projectData = [
   {
     id: 6,
     project_title: `Budget`,
-    project_subtitle:``,
+    project_subtitle: ``,
     project_badges: [
       "Django",
       "Python",
