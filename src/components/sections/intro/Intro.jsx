@@ -4,12 +4,47 @@ import resume from "../../../assets/Resume_VarunK.pdf";
 import { BsDownload } from "react-icons/bs";
 import Typewriter from "typewriter-effect";
 
+const childIntroVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 1.5,
+      staggerChildren: 1,
+    },
+  },
+};
+
+const introVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      duration: 1,
+      staggerChildren: 1,
+    },
+  },
+};
+
 function Intro() {
   return (
     <div className="hero min-h-fit lg:min-h-screen md:pt-5 md:mt-10 md:p-10 lg:mt-5 p-7">
-      <div className="hero-content flex-col md:flex-row md:items-start p-0">
+      <motion.div
+        variants={introVariant}
+        initial="hidden"
+        animate="visible"
+        className="hero-content flex-col md:flex-row md:items-start p-0"
+      >
         {/* profile pic */}
-        <div className="flex flex-col  text-white text-center items-center md:w-1/3">
+        <motion.div
+          variants={childIntroVariant}
+          className="flex flex-col  text-white text-center items-center md:w-1/3"
+        >
           <img
             src={profile}
             className="rounded-lg shadow-2xl w-80 h-80  lg:w-96 lg:h-96"
@@ -27,8 +62,8 @@ function Intro() {
               }}
             />
           </span>
-        </div>
-        <div className="md:w-2/3">
+        </motion.div>
+        <motion.div variants={childIntroVariant} className="md:w-2/3">
           {/* intro content */}
           <div className="md:px-10 lg:px-14 text-justify font-normal grid justify-items-stretch cursor-default">
             <p className="pb-3 font-medium">
@@ -82,8 +117,8 @@ function Intro() {
               <BsDownload className="text-xl"></BsDownload>
             </motion.a>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }

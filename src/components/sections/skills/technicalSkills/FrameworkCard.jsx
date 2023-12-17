@@ -5,7 +5,9 @@ import Card from "../../../framerMotion/Card";
 function FrameworkCard() {
   return (
     <>
-      <h4 className="text-lg capitalize mt-5 mb-2 cursor-default">Frameworks</h4>
+      <h4 className="text-lg capitalize mt-5 mb-2 cursor-default">
+        Frameworks
+      </h4>
       <SectionBody
         customClass={"none"}
         customSectionClass={
@@ -14,7 +16,9 @@ function FrameworkCard() {
       >
         {technicalSkills.frameworks.map((item, index) => {
           const data = { name: item.name, image: item.image, Icon: item.icon };
-          return item.show && <Card key={index} data={data}></Card>;
+          return (
+            item.show && <Card key={index} data={data} index={index}></Card>
+          );
         })}
       </SectionBody>
     </>

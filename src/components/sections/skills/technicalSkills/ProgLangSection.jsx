@@ -16,7 +16,9 @@ function ProgLangSection() {
       >
         {technicalSkills.ProgrammingLanguages.map((item, index) => {
           const data = { name: item.name, image: item.image, Icon: item.icon };
-          return item.show && <Card key={index} data={data}></Card>;
+          return (
+            item.show && <Card key={index} data={data} index={index}></Card>
+          );
         })}
       </SectionBody>
     </>

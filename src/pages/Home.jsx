@@ -1,6 +1,6 @@
 import { Suspense, lazy } from "react";
 import Sidenavbar from "../components/navbar/Sidenavbar";
-import { Certifications, Intro } from "../components/sections";
+import { Intro } from "../components/sections";
 import { sectionData } from "../data/sectionData";
 import CustomLoading from "../components/custom/CustomLoading";
 
@@ -8,6 +8,9 @@ const Footer = lazy(() => import("../components/footer/Footer"));
 const Projects = lazy(() => import("../components/sections/projects/Projects"));
 const Skills = lazy(() => import("../components/sections/skills/Skills"));
 const Aboutme = lazy(() => import("../components/sections/aboutme/Aboutme"));
+const Certifications = lazy(() =>
+  import("../components/sections/certifications/Certifications")
+);
 
 function Home() {
   return (
@@ -32,7 +35,9 @@ function Home() {
         </Suspense>
       </section>
       <section id={sectionData[5]}>
-        <Certifications></Certifications>
+        <Suspense fallback={<CustomLoading></CustomLoading>}>
+          <Certifications></Certifications>
+        </Suspense>
       </section>
       <Suspense fallback={<CustomLoading></CustomLoading>}>
         <Footer></Footer>
