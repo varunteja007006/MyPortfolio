@@ -12,8 +12,8 @@ function App() {
     <>
       <BrowserRouter>
         <main className={`${theme} bg-sky-100`}>
-          <Topnavbar></Topnavbar>
-          <div className="dark:bg-slate-900 dark:text-white">
+          <Topnavbar />
+          <div className="dark:bg-slate-900 dark:text-white pt-14 md:pt-10">
             <Routes>
               <Route index path="/" element={<Home />}></Route>
               <Route path="/contact" element={<Contactme />}></Route>
@@ -24,7 +24,7 @@ function App() {
       <ToastContainer
         position="top-center"
         draggable
-        autoClose={2000}
+        autoClose={1500}
         hideProgressBar={true}
       ></ToastContainer>
     </>

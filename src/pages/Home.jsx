@@ -14,7 +14,7 @@ const Certifications = lazy(() =>
 
 function Home() {
   return (
-    <div className="pt-14 md:pt-10">
+    <div >
       <Sidenavbar></Sidenavbar>
       <section id={sectionData[1]}>
         <Intro></Intro>

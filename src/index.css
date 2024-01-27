@@ -46,7 +46,7 @@ body * {
 
   /* Aesthetics & other properties */
   .contact-btn-lg {
-    @apply p-4 bg-slate-100 text-black rounded-full border border-gray-400 shadow-md hover:bg-slate-200 dark:border-white dark:bg-slate-300 dark:hover:bg-gray-400;
+    @apply w-[20] h-[20] btn bg-slate-100 text-black rounded-full border border-gray-400 shadow-md hover:bg-slate-200 dark:border-white dark:bg-slate-300 dark:hover:bg-gray-400;
   }
 
   .contact-btn-sm {
@@ -54,11 +54,11 @@ body * {
   }
 
   .contact-container-lg {
-    @apply lg:flex flex-wrap gap-3 my-5 items-center px-3 w-fit pr-0 rounded-full border border-r-0 border-gray-400 dark:border-white;
+    @apply flex flex-wrap gap-2 my-3 items-center p-2 w-fit pr-0 rounded-full border border-r-0 border-gray-400 dark:border-white;
   }
 
   .contact-container-sm {
-    @apply p-3 flex-wrap gap-3 py-5 break-words border border-gray-400 dark:border-white;
+    @apply p-3 flex flex-col items-start justify-between flex-wrap gap-3 py-5 mb-3 rounded-lg break-words border border-gray-400 dark:border-white;
   }
 
   .footer-content {
