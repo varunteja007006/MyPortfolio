@@ -25,15 +25,14 @@ function SectionBody({ children, customClass, customSectionClass, title }) {
       animate="visible"
     >
       {title && (
-        <h2 className="text-2xl mb-5 capitalize cursor-default">{title}</h2>
+        <h2 className="mb-5 text-2xl capitalize cursor-default">{title}</h2>
       )}
 
       {/* section body starts here */}
       <section
         className={`${
-          customSectionClass
-            ? customSectionClass
-            : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 justify-items-stretch"
+          customSectionClass ||
+          "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 justify-items-stretch"
         }`}
       >
         {children}

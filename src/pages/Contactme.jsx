@@ -5,15 +5,15 @@ import FooterContent from "../components/footer/FooterContent";
 function Contactme() {
   return (
     <>
-      <div className="my-12 mx-12">
-        <h1 className="text-4xl mb-5">Contact Me</h1>
-        {contacts.map((item) => {
+      <div className="h-screen mx-12 my-12">
+        <h1 className="mb-5 text-4xl">Contact Me</h1>
+        {contacts.map((item, index) => {
           return (
-            <>
+            <div key={index}>
               {/* large screen */}
-              <div key={item.id} className="hidden md:contact-container-lg">
+              <div className="hidden md:contact-container-lg">
                 <div className="p-2">
-                  <p className="cursor-default capitalize">
+                  <p className="capitalize cursor-default">
                     {item.contact_type}:{" "}
                   </p>
                 </div>
@@ -31,15 +31,12 @@ function Contactme() {
                 </div>
               </div>
               {/* Small screen */}
-              <div
-                key={item.id}
-                className="md:hidden contact-container-sm"
-              >
-                <div className="flex flex-wrap flex-row gap-2 break-all">
-                  <p className="cursor-default capitalize">
+              <div className="md:hidden contact-container-sm">
+                <div className="flex flex-row flex-wrap gap-2 break-all">
+                  <p className="capitalize cursor-default">
                     {item.contact_type}:{" "}
                   </p>
-                  <>{item.contact_value}</>
+                  {item.contact_value}
                 </div>
                 <div>
                   <Link
@@ -51,7 +48,7 @@ function Contactme() {
                   </Link>
                 </div>
               </div>
-            </>
+            </div>
           );
         })}
       </div>

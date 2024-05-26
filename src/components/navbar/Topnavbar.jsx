@@ -5,14 +5,14 @@ import ResumeButton from "../customButtons/ResumeButton";
 function Topnavbar() {
   return (
     <nav className="dark:text-white">
-      <div className="navbar font-semibold fixed z-50 bg-sky-100 bg-opacity-50 dark:bg-slate-900 dark:bg-opacity-50">
+      <div className="fixed z-50 font-semibold bg-opacity-50 navbar bg-sky-100 dark:bg-slate-900 dark:bg-opacity-50">
         <div className="navbar-start">
           {/* dropdown button and menu options */}
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="w-5 h-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -45,16 +45,16 @@ function Topnavbar() {
           <a
             href="/"
             aria-label="Developer"
-            className="normal-case font-semibold ms-2 text-sm cursor-default flex flex-row gap-3  items-center"
+            className="flex flex-row items-center gap-3 text-sm font-semibold normal-case cursor-default ms-2"
           >
-            <span className="hidden lg:flex text-sm">{"< "}</span>
+            <span className="hidden text-sm lg:flex">{"< "}</span>
             <span className="text-2xl">Developer</span>
-            <span className="hidden lg:flex text-sm">{" />"}</span>
+            <span className="hidden text-sm lg:flex">{" />"}</span>
           </a>
         </div>
         {/* Big screen nav bar */}
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 gap-3">
+        <div className="hidden navbar-center lg:flex">
+          <ul className="gap-3 px-1 menu menu-horizontal">
             <li>
               <NavLink to={"/"} className={"accent-btn"}>
                 Home
@@ -67,8 +67,8 @@ function Topnavbar() {
             </li>
           </ul>
         </div>
-        <div className="navbar-end gap-2">
-          <ResumeButton></ResumeButton>
+        <div className="gap-2 navbar-end">
+          <ResumeButton />
           <ThemeButton />
         </div>
       </div>

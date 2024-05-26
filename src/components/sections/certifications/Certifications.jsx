@@ -18,12 +18,12 @@ function Certifications() {
           item.show && (
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="p-5 certificate-accent-card"
+              className="grid grid-rows-1 p-5 certificate-accent-card"
               key={item.id}
               variants={itemEffect}
             >
               {item.certificate_name}
-              <span className="text-sm text-gray-600 font-normal">
+              <span className="text-sm font-normal text-gray-600">
                 - {item.certificate_provider}
               </span>
             </motion.div>

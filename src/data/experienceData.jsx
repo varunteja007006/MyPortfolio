@@ -1,5 +1,25 @@
 const experienceData = [
   {
+    id: 2,
+    jobTitle: "Software Engineer",
+    company: "Invest4Edu",
+    workingFrom: "Dec 2023",
+    workingTill: "",
+    dateOfJoining: "2023-12-18",
+    dateOfResigning: "2023-12-18",
+    jobDescription: [
+      "Profession: Full Stack Developer - Invest4Edu Education & Financial Services Platform.",
+      "Responsibilities: Developing Frontend, integrating with backend using Node JS. Building of complex & efficient UI like dashboards, charts, filters, login etc. using Material UI, Highcharts, etc.. Also occasionally working on the SSMS (SQL).",
+      `Major Accomplishments: 
+      Complete Revamp of the website in the span of 3 months which helped in gaining the 6K+ users in 2 months after the release. The revamp included the rewrite of class components to functional components.\n
+      Increasing SEO by migrating the React App to Next JS framework to take advantage of SSR. 
+      `,
+    ],
+
+    show: true,
+    current: true,
+  },
+  {
     id: 1,
     jobTitle: "System Engineer",
     company: "Tata Consultancy Services",

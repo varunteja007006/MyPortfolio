@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <main className={`${theme} bg-sky-100`}>
+        <main className={`${theme} bg-sky-100 min-h-screen`}>
           <Topnavbar />
           <div className="dark:bg-slate-900 dark:text-white pt-14 md:pt-10">
             <Routes>

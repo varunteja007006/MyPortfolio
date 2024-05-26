@@ -12,7 +12,6 @@ function Sidenavbar() {
       return;
     }
     setSectionID(sectionID + 1);
-    console.log(sectionID);
   };
 
   const increment = () => {
@@ -21,7 +20,6 @@ function Sidenavbar() {
       return;
     }
     setSectionID(sectionID - 1);
-    console.log(sectionID);
   };
 
   const next = () => {
@@ -35,7 +33,7 @@ function Sidenavbar() {
   return (
     <>
       {/* side nav on big screen */}
-      <div className="hidden lg:flex flex-col gap-20 fixed bottom-1/3 right-2 z-10">
+      <div className="fixed z-10 flex-col hidden gap-20 lg:flex bottom-1/3 right-2">
         <CustomLinkButton
           label={<SlArrowUp></SlArrowUp>}
           customClass={"btn sidebar-btn-lg"}
@@ -52,7 +50,7 @@ function Sidenavbar() {
         ></CustomLinkButton>
       </div>
       {/* side nav on small screen */}
-      <div className="lg:hidden fixed bottom-32 right-2 z-10  ">
+      <div className="fixed z-10 lg:hidden bottom-32 right-2 ">
         <CustomLinkButton
           label={<SlArrowDown></SlArrowDown>}
           customClass={"btn sidebar-btn-sm"}

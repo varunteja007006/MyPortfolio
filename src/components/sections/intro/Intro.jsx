@@ -38,19 +38,19 @@ function Intro() {
         variants={introVariant}
         initial="hidden"
         animate="visible"
-        className="hero-content flex-col md:flex-row md:items-start p-0"
+        className="flex-col p-0 hero-content md:flex-row md:items-start"
       >
         {/* profile pic */}
         <motion.div
           variants={childIntroVariant}
-          className="flex flex-col  text-white text-center items-center md:w-1/3"
+          className="flex flex-col items-center text-center text-white md:w-1/3"
         >
           <img
             src={profile}
-            className="rounded-lg shadow-2xl w-80 h-80  lg:w-96 lg:h-96"
-            alt="profile image"
+            className="rounded-lg shadow-2xl w-80 h-80 lg:w-96 lg:h-96"
+            alt="profile"
           />
-          <span className="text-xl text-black dark:text-white mt-5 w-full h-fit">
+          <span className="w-full mt-5 text-xl text-black dark:text-white h-fit">
             <Typewriter
               options={{
                 strings: [
@@ -65,7 +65,7 @@ function Intro() {
         </motion.div>
         <motion.div variants={childIntroVariant} className="md:w-2/3">
           {/* intro content */}
-          <div className="md:px-10 lg:px-14 text-justify font-normal grid justify-items-stretch cursor-default">
+          <div className="grid font-normal text-justify cursor-default md:px-10 lg:px-14 justify-items-stretch">
             <p className="pb-3 font-medium">
               I am a passionate developer who loves to work with different tech
               stacks, on both front-end and back-end. I have hands-on experience
@@ -90,18 +90,17 @@ function Intro() {
               automation of day-to-day tasks. I am always eager to explore new
               technologies and I keep myself relevant. <br />
               <br />
-              Currently, I work as System Engineer for HCM platform development,
-              developing react based custom responsive interfaces tailored to
-              meet client requirements. I have successfully developed dynamic
-              dashboards and data panels. I am keen to expand my domain in other
-              fields of technology.{" "}
+              Currently, I work as Software Engineer at{" "}
+              <a href="https://invest4edu.com/">InvestEdu</a>. Expertise in
+              building Web Apps using Next JS, React, Node, SQL.{" "}
               <em className="font-bold">
                 {" "}
+                Always curious to explore & work with new technologies.
                 Therefore I am open to opportunities.
               </em>
             </p>
             <div className="justify-self-end">
-              <p className="pb-3 font-normal italic">- Varun Teja . K</p>
+              <p className="pb-3 italic font-normal">- Varun Teja . K</p>
             </div>
 
             {/* download resume button */}

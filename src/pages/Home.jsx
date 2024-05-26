@@ -14,33 +14,33 @@ const Certifications = lazy(() =>
 
 function Home() {
   return (
-    <div >
+    <div>
       <Sidenavbar></Sidenavbar>
       <section id={sectionData[1]}>
-        <Intro></Intro>
+        <Intro />
       </section>
       <section id={sectionData[2]}>
-        <Suspense fallback={<CustomLoading></CustomLoading>}>
-          <Skills></Skills>
+        <Suspense fallback={<CustomLoading />}>
+          <Skills />
         </Suspense>
       </section>
       <section id={sectionData[3]}>
-        <Suspense fallback={<CustomLoading></CustomLoading>}>
-          <Aboutme></Aboutme>
+        <Suspense fallback={<CustomLoading />}>
+          <Aboutme />
         </Suspense>
       </section>
       <section id={sectionData[4]}>
-        <Suspense fallback={<CustomLoading></CustomLoading>}>
-          <Projects></Projects>
+        <Suspense fallback={<CustomLoading />}>
+          <Projects />
         </Suspense>
       </section>
       <section id={sectionData[5]}>
-        <Suspense fallback={<CustomLoading></CustomLoading>}>
-          <Certifications></Certifications>
+        <Suspense fallback={<CustomLoading />}>
+          <Certifications />
         </Suspense>
       </section>
-      <Suspense fallback={<CustomLoading></CustomLoading>}>
-        <Footer></Footer>
+      <Suspense fallback={<CustomLoading />}>
+        <Footer />
       </Suspense>
     </div>
   );

@@ -13,18 +13,18 @@ function Experience() {
 
   return (
     <>
-      <h3 className="text-xl capitalize mb-5 cursor-default">Experience</h3>
+      <h3 className="mb-5 text-xl capitalize cursor-default">Experience</h3>
       {experience.map((item) => {
         return (
           item.show && (
             <motion.div
               key={item.id}
-              className="card aboutme-accent-card"
+              className="mb-2 card aboutme-accent-card"
               variants={itemEffect}
             >
-              <div className="card-body cursor-default">
+              <div className="cursor-default card-body">
                 <h2 className="card-title">{item.jobTitle}</h2>
-                <span className="flex flex-col lg:flex-row items-start gap-2 text-gray-700">
+                <span className="flex flex-col items-start gap-2 text-gray-700 lg:flex-row">
                   <p>{item.company}</p>
                   <span className="flex flex-row text-sm">
                     <p className="lg:mx-2">{item.workingFrom}</p>
